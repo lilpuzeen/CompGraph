@@ -167,7 +167,7 @@ class FilterPunctuation(Mapper):
         self.column = column
 
     def __call__(self, row: TRow) -> TRowsGenerator:
-        yield {**row, self.column: ''.join(filter(lambda x: not x in string.punctuation, row[self.column]))}
+        yield {**row, self.column: ''.join(filter(lambda x: x not in string.punctuation, row[self.column]))}
 
 
 class LowerCase(Mapper):

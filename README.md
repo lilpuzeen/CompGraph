@@ -50,12 +50,6 @@ or
 graph.run(input=lambda: Graph.graph_from_file(filename, parser)))
 ```
 
-### Installation
-In order to install this package, run:
-```commandline
-pip install compgraph
-```
-
 ### Sample usage
 First, construct a graph using a series of operations, then execute it with your data:
 
